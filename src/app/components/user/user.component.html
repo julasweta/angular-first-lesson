@@ -1,0 +1,4 @@
+<p>{{ user.id }}</p>
+<p>{{ user.name }}</p>
+<p>{{ user.username }}</p>
+<button  [routerLink]="['/posts', user.id]">Всі пости Юзера {{ user.id }}</button>

@@ -1,0 +1,7 @@
+
+<h3>title: {{ post.title }}</h3>
+<p>id: {{ post.id }}</p>
+<p>userId: {{ post.userId }}</p>
+<button [routerLink]="['/comments', post.id]">
+  Всі коменти до Post {{ post.id }}
+</button>

@@ -1,1 +1,64 @@
-/* You can add global styles to this file, and also import other style files */
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #ff6b6b, #355c7d);
+  transition: background 0.3s ease;
+
+  &:hover {
+    background-image: linear-gradient(to right, #355c7d, #ff6b6b);
+  }
+}
+
+h2,
+h3 {
+  color: rgb(99, 99, 116);
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.posts,
+.users,
+.comments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .post,
+  .user,
+  .comment {
+    width: 20%;
+    border: 2px solid gray;
+    border-radius: 10%;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 4px 4px rgba(32, 30, 30, 0.2);
+  }
+}
+.comments .comment {
+  width: 90%;
+  border: 2px solid rgb(202, 196, 196);
+  border-radius: 2%;
+}
+
+p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+p:nth-child(3n + 1) {
+  color: #6c3636;
+}
+
+p:nth-child(3n + 2) {
+  font-weight: bold;
+  color: rgb(97, 97, 109);
+}
